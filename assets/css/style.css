@@ -1,0 +1,142 @@
+/* Rishika Infotech - Custom Stylesheet */
+
+:root {
+  --brand-blue: #0756B5;
+  --brand-dark: #053E82;
+  --brand-charcoal: #454B55;
+  --brand-heading: #1E2530;
+  --brand-bg-light: #F4F7FB;
+  --brand-accent-red: #E53935;
+  --whatsapp-green: #25D366;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* 80px sticky header offset for anchor jumps */
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--brand-charcoal);
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-blue);
+}
+
+/* Card Transitions & Hover Effects */
+.card-transition {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.28s ease;
+}
+.card-transition:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px -10px rgba(7, 86, 181, 0.14), 0 4px 12px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Form inputs */
+.form-input-focus:focus {
+  outline: none;
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 3px rgba(7, 86, 181, 0.18);
+  background-color: #FFFFFF;
+}
+
+/* Floating Action Button (WhatsApp Quick Connect) */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99;
+  background-color: #25D366;
+  color: #FFFFFF;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.5), 0 6px 10px -4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px 12px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 15px 30px -5px rgba(37, 211, 102, 0.65);
+  color: #FFFFFF;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 88px;
+  right: 28px;
+  z-index: 90;
+  width: 44px;
+  height: 44px;
+  background-color: var(--brand-heading);
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+.back-to-top:hover {
+  background-color: var(--brand-blue);
+  transform: translateY(-3px);
+}
+
+/* Image zoom effect on card hover */
+.img-zoom-container {
+  overflow: hidden;
+}
+.img-zoom-container img {
+  transition: transform 0.4s ease;
+}
+.card-transition:hover .img-zoom-container img {
+  transform: scale(1.05);
+}
+
+/* Active Nav Link highlight */
+.nav-link.active {
+  color: var(--brand-blue);
+  font-weight: 600;
+  position: relative;
+}
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--brand-blue);
+  border-radius: 2px;
+}
+
