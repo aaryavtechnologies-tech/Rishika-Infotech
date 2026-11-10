@@ -61,5 +61,6 @@ Rishika Infotech/
 
 - **Zero AI / Placeholder Images:** Built exclusively using the 13 genuine workshop photos provided.
 - **Direct WhatsApp Lead Conversion:** Service form pre-fills a professional request to **+91 9304201682**.
+- **Official Contact Email:** [rishikainfotech2023@gmail.com](mailto:rishikainfotech2023@gmail.com) for official inquiries, corporate orders, and estimates.
 - **Sticky & Mobile Friendly:** Fixed navigation header with drawer menu and quick WhatsApp floating badge.
 - **Embedded Google Map:** Showing exact shop location at Shop No. 208, Radhika Complex, Boring Road, Patna.
